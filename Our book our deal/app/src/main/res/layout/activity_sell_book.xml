@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    >
 
 
     <LinearLayout
@@ -14,28 +13,23 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/to"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:padding="8dp"
-                android:text="Our Book Our Deal"
+                android:text="Sell Books"
                 android:textColor="#8E24AA"
-                android:textSize="30sp" />
-
+                android:textSize="30dp" />
         </LinearLayout>
-
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,42 +38,67 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/email_id_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:hint="Email ID" />
-
-            <EditText
-                android:id="@+id/password_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:hint="Password"
+                android:layout_margin="8dp"
+                android:hint="Book Name"
                 android:inputType="textMultiLine" />
 
-        </LinearLayout>
-        </ScrollView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Author Name"
+                android:inputType="textMultiLine" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Image"
+                android:textSize="18sp"/>
 
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/natur080"
+                />
+            
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="price"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Type of book"
+                android:inputType="textMultiLine" />
+
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:gravity="center"
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/loginButton"
+                android:id="@+id/sell_book_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
                 android:background="#8E24AA"
-                android:padding="8dp"
-                android:text="log in"
+                android:text="add"
                 android:textColor="#FFFFFF" />
-
         </LinearLayout>
-
 
     </LinearLayout>
 </ScrollView>

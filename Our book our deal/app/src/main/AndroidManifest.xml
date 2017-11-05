@@ -16,27 +16,80 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".logIn"
             android:label="@string/login"
             android:parentActivityName=".MainActivity">
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".signUp"
             android:label="@string/signUp"
             android:parentActivityName=".MainActivity">
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
+        <activity
+            android:name=".BuySell"
+            android:label="@string/BuySell"
+            android:parentActivityName=".logIn">
 
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".logIn" />
+        </activity>
+        <activity
+            android:name=".advertisement"
+            android:label="@string/advertisement"
+            android:parentActivityName=".BuySell">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuySell" />
+        </activity>
+        <activity
+            android:name=".showBookList"
+            android:label="@string/showBookList"
+            android:parentActivityName=".BuySell">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuySell" />
+        </activity>
+        <activity
+            android:name=".showBookToOrder"
+            android:label="@string/showBookToOrder"
+            android:parentActivityName=".showBookList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".showBookList" />
+        </activity>
+        <activity
+            android:name=".completeYourOrder"
+            android:parentActivityName=".showBookToOrder">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".showBookToOrder" />
+        </activity>
+        <activity android:name=".sellBook"
+            android:parentActivityName=".BuySell">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuySell"
+                />
+
+        </activity>
     </application>
 
 </manifest>

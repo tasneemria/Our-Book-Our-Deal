@@ -1,31 +1,26 @@
 package com.example.android.ourbookourdeal;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-/**
- * Created by a on 11/4/17.
- */
-
-public class signUp extends AppCompatActivity {
+public class completeYourOrder extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sign_up);
+        setContentView(R.layout.activity_complete_your_order);
 
-        Button signUpButton = (Button) findViewById(R.id.signUpButton);
+       /* Button continueBuying = (Button) findViewById(R.id.complete_your_order_buying);
 
-        signUpButton.setOnClickListener(new View.OnClickListener() {
+        continueBuying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent familyIntent = new Intent(signUp.this, logIn.class);
+                Intent familyIntent = new Intent(completeYourOrder.this, showBookList.class);
                 startActivity(familyIntent);
             }
-        });
-
+        });*/
     }
 }

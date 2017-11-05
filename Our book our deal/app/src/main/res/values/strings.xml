@@ -2,4 +2,11 @@
     <string name="app_name">Our Book Our Deal</string>
     <string name="login">Our Book Our Deal</string>
     <string name="signUp">Our Book Our Deal</string>
+    <string name="BuySell">Our Book Our Deal</string>
+    <string name="app_label">Our Book Our Deal</string>
+    <string name="search_hint">Our Book Our Deal</string>
+    <string name="advertisement">Our Book Our Deal</string>
+    <string name="showBookList">Our Book Our Deal</string>
+    <string name="showBookToOrder">Our Book Our Deal</string>
+
 </resources>
